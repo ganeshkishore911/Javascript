@@ -20,10 +20,6 @@ name_="kish"
 var name_
 console.log(name_)
 
-// nae_="kish"
-// let nae_
-// console.log(nae_)  // refence error - cant acess the 'nae' before initialized
-
-const arr=[1,2,3,4,5]
-arr[1]=3
-console.log(arr)   // for const we update value only in arr ,obj
+nae_="kish"
+let nae_
+console.log(nae_)  // refence error - cant acess the 'nae' before initialized
