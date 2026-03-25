@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Bubbling</title>
+</head>
+<body>
+
+<!-- event bubbling -->
+<div id="parent">
+    <button id="child">click me</button> 
+</div>
+
+<script>
+// if a button clicked this go to the parent  
+// then to body -> html-> document
+
+document.getElementById("child").addEventListener("click",(e)=>{
+    console.log("Button Clicked")
+    //e.stopPropagation()
+
+})
+
+document.getElementById("parent").addEventListener("click",()=>{
+    console.log("parent Clicked")
+})
+</script>
+
+</body>
+</html>
