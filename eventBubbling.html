@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Event Bubbling</title>
+    <style>
+     
+        #child{
+            background: blue;
+            
+        }
+
+    </style>
 </head>
 <body>
 
@@ -15,12 +23,11 @@
 // if a button clicked this go to the parent  
 // then to body -> html-> document
 
-document.getElementById("child").addEventListener("click",(e)=>{
+document.getElementById("child").addEventListener("click",()=>{
     console.log("Button Clicked")
     //e.stopPropagation()
 
 })
-
 document.getElementById("parent").addEventListener("click",()=>{
     console.log("parent Clicked")
 })
